@@ -2,9 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* Font family used in the app */
 	font-family: 'Poppins', sans-serif;
 }
 .app {
+	/*Linear gradient for the entire page*/
 	background: rgb(2, 0, 36);
 	background: linear-gradient(
 		90deg,
@@ -14,12 +16,16 @@
 	padding: 2rem 0;
 	display: grid;
 	grid-template-columns: 1fr;
+	/*Placing it centrally*/
 	justify-items: center;
 	justify-content: center;
+	/*Making it a height of full screen at a minimum*/
 	min-height: 100vh;
 }
 @media (min-width: 992px) {
 	.app {
+		/*Placing the price tabs in a row at 992px screen size or above*/
 		grid-template-columns: repeat(3, minmax(20rem, 25rem));
+		/*Making the width of pricetab minimum of 320px and maximum of 400px*/
 	}
 }

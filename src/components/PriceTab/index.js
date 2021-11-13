@@ -1,12 +1,12 @@
 import Container from './Container'
 import dataList from './pricedata'
-import './index.css'
 
 const PriceTab = () => {
 	return (
 		<>
-			{dataList.map((data) => (
-				<Container data={data} />
+			{/* Maping through the prices data to make 3 tabs */}
+			{dataList.map((data, index) => (
+				<Container key={index} data={data} />
 			))}
 		</>
 	)

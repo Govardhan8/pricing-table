@@ -5,8 +5,11 @@ import './container.css'
 const Container = ({ data }) => {
 	return (
 		<>
+			{/* Single instance of price tab */}
 			<div className='container'>
+				{/* Type and price of the segment */}
 				<Header type={data.type} price={data.price} />
+				{/* Features and its availability */}
 				<div className='content'>
 					<Li value={data.users.value} available={data.users.available} />
 					<Li value={data.storage.value} available={data.storage.available} />
@@ -20,6 +23,7 @@ const Container = ({ data }) => {
 						available={data.private_projects.available}
 					/>
 					<Li value={data.phone.value} available={data.phone.available} />
+					{/* Giving highlight prop to hightlight the unlimited word */}
 					<Li
 						highlight
 						value={data.subdomain.value}
